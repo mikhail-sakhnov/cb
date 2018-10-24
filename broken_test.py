@@ -8,4 +8,9 @@ def test_something():
 
 def test_something2():
     print(os.environ)
-    assert False, "Always broken 1"
+    assert False, "Always broken 2"
+
+
+def test_something3():
+    print(os.environ)
+    assert False, "Always broken 3"

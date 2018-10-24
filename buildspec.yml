@@ -3,7 +3,7 @@ version: 0.2
 phases:
   build:
     commands:
-      - echo "build"
+      - docker-compose -f local.yml run test
   post_build:
     commands:
       - echo "build done"

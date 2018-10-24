@@ -1,0 +1,13 @@
+version: '2.1'
+
+volumes:
+  postgres_data_local: {}
+  postgres_backup_local: {}
+
+services:
+  test: &django
+    image: python:3.6.3
+    volumes:
+      - .:/app
+    env_file: .env
+    command: bash -c "pip install pytest; pytest /app"

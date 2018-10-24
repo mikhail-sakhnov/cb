@@ -18,5 +18,5 @@ def test_something3():
 
 def test_something4():
     print(os.environ)
-    assert False, "Always broken 4"
+    assert False, "Always broken 4 4"
 
